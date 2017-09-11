@@ -1,16 +1,22 @@
 // Complete the following underscore functions.
 // Reference http://underscorejs.org/ for examples.
 
-const keys = (obj) => {
+onst keys = (obj) => {
   // Retrieve all the names of the object's properties.
   // Return the keys as strings in an array.
   // Based on http://underscorejs.org/#keys
+  return arrayMethods.reduce
+  (Object.entries(obj),(array, [key, value]) => 
+  array.concat(key), []);
 };
 
 const values = (obj) => {
   // Return all of the values of the object's own properties.
   // Ignore functions
   // http://underscorejs.org/#values
+  return arrayMethods.reduce
+  (object.entries(obj),(arr, [key, value]) =>
+  array.concat(key), []);
 };
 
 const mapObject = (obj, cb) => {
